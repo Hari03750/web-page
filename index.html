@@ -3,64 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JobRinger - India's Job Portal</title>
+  <title>JobRinger - Find Your Dream Job</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Navbar -->
   <header>
-    <div class="logo">JobRinger</div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#jobs">Jobs</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="menu-btn">☰</div>
+    <div class="container nav-container">
+      <div class="logo">JobRinger</div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </div>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <h1>Welcome to JobRinger</h1>
-    <p>Your gateway to thousands of job opportunities in India</p>
-    <a href="#jobs" class="btn">Explore Jobs</a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>JobRinger is a leading job portal in India, connecting top talent with top companies. We help job seekers find their dream job and assist employers in hiring the best candidates efficiently.</p>
-  </section>
-
-  <!-- Jobs Section -->
-  <section id="jobs">
-    <h2>Latest Jobs</h2>
-    <div class="job-card">
-      <h3>Frontend Developer</h3>
-      <p>Location: Remote | Experience: 1-3 Years</p>
-    </div>
-    <div class="job-card">
-      <h3>Backend Engineer</h3>
-      <p>Location: Bangalore | Experience: 2-5 Years</p>
-    </div>
-    <div class="job-card">
-      <h3>UI/UX Designer</h3>
-      <p>Location: Delhi | Experience: 0-2 Years</p>
+    <div class="container">
+      <h1>Find the Right Job Faster</h1>
+      <p>India’s trusted job search platform</p>
+      <a href="#jobs" class="apply-btn">Apply Now</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@jobringer.com</p>
-    <p>Phone: +91-9876543210</p>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About JobRinger</h2>
+      <p>JobRinger connects job seekers with top employers across India. Our platform helps you discover, apply, and get hired for jobs that match your skills.</p>
+    </div>
   </section>
 
+  <!-- Jobs -->
+  <section id="jobs" class="section jobs-section">
+    <div class="container">
+      <h2>Latest Jobs</h2>
+      <div class="job-listing">
+        <h3>Software Developer</h3>
+        <p>Location: Bangalore | Experience: 1-3 years</p>
+        <a href="#" class="apply-btn">Apply</a>
+      </div>
+      <div class="job-listing">
+        <h3>Marketing Executive</h3>
+        <p>Location: Delhi | Experience: 0-2 years</p>
+        <a href="#" class="apply-btn">Apply</a>
+      </div>
+      <div class="job-listing">
+        <h3>HR Manager</h3>
+        <p>Location: Mumbai | Experience: 3-5 years</p>
+        <a href="#" class="apply-btn">Apply</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@jobringer.com</p>
+      <p>Phone: +91-9876543210</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 JobRinger. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 JobRinger. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
