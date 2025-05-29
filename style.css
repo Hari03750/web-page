@@ -1,142 +1,143 @@
-/* Color scheme from JobRinger site */
 :root {
-  --primary-color: #03254c;    /* dark blue */
-  --secondary-color: #ff7a00;  /* orange */
-  --text-color: #ffffff;
-  --bg-color: #f9f9f9;
+  --primary: #002b5b;
+  --secondary: #ff6a00;
+  --white: #fff;
+  --gray: #f9f9f9;
+  --text-dark: #111;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: var(--bg-color);
-  color: #333;
+  background: var(--gray);
+  color: var(--text-dark);
+  scroll-behavior: smooth;
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
+  padding: 0 20px;
 }
 
 /* Header */
 header {
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--primary);
+  color: var(--white);
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
-.nav-container {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 nav a {
-  color: var(--text-color);
+  color: var(--white);
   text-decoration: none;
   font-weight: 500;
 }
 
-.menu-toggle {
+.menu-icon {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
-  color: var(--text-color);
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--primary);
+  color: var(--white);
+  padding: 100px 20px;
   text-align: center;
-  padding: 4rem 2rem;
 }
 
 .hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
 }
 
 .apply-btn {
-  background: var(--secondary-color);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--secondary);
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: #e95a00;
 }
 
 /* Sections */
-.section {
-  padding: 3rem 1rem;
+section {
+  padding: 60px 20px;
   text-align: center;
 }
 
-.jobs-section .job-listing {
+.job-card {
   background: white;
-  margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  padding: 20px;
   max-width: 500px;
-}
-
-.job-listing .apply-btn {
-  margin-top: 0.5rem;
-  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--primary);
+  color: var(--white);
   text-align: center;
   padding: 1rem 0;
-  margin-top: 2rem;
 }
 
-/* Mobile Styles */
+/* Responsive */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column;
     display: none;
-    background: var(--primary-color);
+    flex-direction: column;
     position: absolute;
-    right: 1rem;
+    right: 20px;
     top: 60px;
-    width: 200px;
+    background: var(--primary);
+    border-radius: 8px;
     padding: 1rem;
-    border-radius: 5px;
   }
 
   nav ul.active {
     display: flex;
   }
 
-  .menu-toggle {
+  .menu-icon {
     display: block;
   }
 }
