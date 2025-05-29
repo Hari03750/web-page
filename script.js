@@ -1,8 +1,7 @@
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+const menuIcon = document.getElementById("menu-icon");
+const navbar = document.getElementById("navbar").querySelector("ul");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+menuIcon.addEventListener("click", () => {
+  navbar.classList.toggle("active");
 });
-
 
