@@ -1,3 +1,4 @@
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@ body {
   margin: auto;
 }
 
+/* Navbar styles */
 .navbar {
   background: #111;
   padding: 1rem 0;
@@ -55,6 +57,7 @@ body {
   border-radius: 5px;
 }
 
+/* Hero section styles */
 .hero {
   background: linear-gradient(to right, #00bfa5, #00796b);
   color: white;
@@ -94,6 +97,7 @@ body {
   cursor: pointer;
 }
 
+/* Features section styles */
 .features {
   display: flex;
   gap: 2rem;
@@ -110,6 +114,7 @@ body {
   text-align: center;
 }
 
+/* Footer styles */
 .footer {
   background: #222;
   color: #ccc;
@@ -118,13 +123,13 @@ body {
   margin-top: 2rem;
 }
 
+/* Mobile styles */
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .nav ul {
     flex-direction: column;
