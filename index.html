@@ -7,52 +7,60 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <h1 class="logo">JobRinger</h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Employers</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" class="btn">Login</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-    </div>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">JobRinger</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="menu-btn">☰</div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Bringing you the Perfect Job!</h2>
-      <p>11,000+ Active Jobs to Apply</p>
-      <form class="search-box">
-        <input type="text" placeholder="Search jobs..." />
-        <button type="submit">Search</button>
-      </form>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to JobRinger</h1>
+    <p>Your gateway to thousands of job opportunities in India</p>
+    <a href="#jobs" class="btn">Explore Jobs</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>JobRinger is a leading job portal in India, connecting top talent with top companies. We help job seekers find their dream job and assist employers in hiring the best candidates efficiently.</p>
+  </section>
+
+  <!-- Jobs Section -->
+  <section id="jobs">
+    <h2>Latest Jobs</h2>
+    <div class="job-card">
+      <h3>Frontend Developer</h3>
+      <p>Location: Remote | Experience: 1-3 Years</p>
+    </div>
+    <div class="job-card">
+      <h3>Backend Engineer</h3>
+      <p>Location: Bangalore | Experience: 2-5 Years</p>
+    </div>
+    <div class="job-card">
+      <h3>UI/UX Designer</h3>
+      <p>Location: Delhi | Experience: 0-2 Years</p>
     </div>
   </section>
 
-  <section class="features container">
-    <div class="feature">
-      <h3>Quick Job Search</h3>
-      <p>Find jobs by category, location, or keyword.</p>
-    </div>
-    <div class="feature">
-      <h3>Employers</h3>
-      <p>Recruit smart, recruit right with our platform.</p>
-    </div>
-    <div class="feature">
-      <h3>Mobile App</h3>
-      <p>Apply to jobs on-the-go with our mobile app.</p>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@jobringer.com</p>
+    <p>Phone: +91-9876543210</p>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 JobRinger. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>© 2025 JobRinger. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
